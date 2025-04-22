@@ -7,7 +7,8 @@ export default defineConfig({
   base: '/portfolio/',
   build: {
     outDir: 'docs',
-    emptyOutDir: true
+    emptyOutDir: true,
+    assetsDir: 'assets'
   },
   resolve: {
     alias: {
