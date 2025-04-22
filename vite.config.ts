@@ -4,7 +4,11 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/portfolio/', // Set to your GitHub repo name
+  base: '/portfolio/',
+  build: {
+    outDir: 'docs',
+    emptyOutDir: true
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
