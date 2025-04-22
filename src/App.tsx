@@ -38,11 +38,11 @@ function App() {
 
       <main className="text-gray-100 min-h-screen relative z-10">
         <Routes>
-          <Route path="/" element={<Sections key="home" />} />
+          <Route path="/" element={<Sections />} />
           <Route path="/project/:id" element={<ProjectDetailsPage />} />
           <Route path="/experience/:id" element={<ExperienceBlogPage />} />
           <Route path="/certificate/:id" element={<CertificatePage />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </main>
     </HashRouter>
